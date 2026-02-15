@@ -18,6 +18,24 @@ In this session, our goal is to offer a practical, actionable approach on how to
 
 
 # References
-1. Worktrees and working with isolated changes 
+1. Worktrees, working with isolated changes and background agents
 	1. https://code.visualstudio.com/updates/v1_107#_continue-tasks-in-background-or-cloud-agents
 	1. https://code.visualstudio.com/docs/sourcecontrol/branches-worktrees#_working-with-git-worktrees
+	1.  https://code.visualstudio.com/updates/v1_107#_adding-context-to-background-agents 
+1. Subagents
+	1. https://code.visualstudio.com/updates/v1_107#_run-agents-as-subagents-experimental
+1. Agent skills
+	1. https://code.visualstudio.com/updates/v1_108#_agent-skills-experimental
+	1. https://code.visualstudio.com/docs/copilot/customization/agent-skills
+	1. https://code.visualstudio.com/docs/copilot/customization/agent-skills#_agent-skills-vs-custom-instructions
+1. Claude preview
+	1. https://code.visualstudio.com/updates/v1_109#_claude-agent-preview
+1. Agent orchestation
+	1. https://code.visualstudio.com/updates/v1_109#_agent-orchestration
+1. Manage context window
+	1. +Compact
+	1. https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context
+1. Skills
+	1. https://skills.sh
+1. Awesome Copilot
+	1. https://github.com/github/awesome-copilot
