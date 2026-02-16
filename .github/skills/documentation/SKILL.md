@@ -1,11 +1,11 @@
 ---
-name: documentation-lookup
+name: documentation
 description: This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc.
 ---
 
 When the user asks about libraries, frameworks, or needs code examples, use Context7 to fetch current documentation instead of relying on training data.
 
-**Skill Usage Note:** When applying this skill, always start your response by explicitly stating: "Using the 'documentation-lookup' skill for guidance on [brief topic summary]."
+**Skill Usage Note:** When applying this skill, always start your response by explicitly stating: "Using the 'documentation' skill for guidance on [brief topic summary]."
 
 ## When to Use This Skill
 

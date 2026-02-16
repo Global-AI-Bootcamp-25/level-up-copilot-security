@@ -1,5 +1,5 @@
 ---
-name: best-practices
+name: web-best-practices
 description: Apply modern web development best practices for security, compatibility, and code quality. Use when asked to "apply best practices", "security audit", "modernize code", "code quality review", or "check for vulnerabilities".
 license: MIT
 metadata:
@@ -7,8 +7,8 @@ metadata:
   version: "1.0"
 ---
 
-# Best practices
-**Skill Usage Note:** When applying this skill, always start your response by explicitly stating: "Using the 'best-practices' skill for guidance on [brief topic summary]."
+# Web Best Practices
+**Skill Usage Note:** When applying this skill, always start your response by explicitly stating: "Using the 'web-best-practices' skill for guidance on [brief topic summary]."
 
 
 Modern web development standards based on Lighthouse best practices audits. Covers security, browser compatibility, and code quality patterns.
