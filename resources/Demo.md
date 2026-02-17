@@ -28,5 +28,7 @@ Threat modelling and custom agent or skill to evaluate an image, and do the same
 - PR review
 
 ## Agent orchestration
-TODO soon.
+- Automatically triage issues
+- Continuous documentation
+- Weekly repo status with critical vulnerabilities (like dependabot)
 
