@@ -12,10 +12,6 @@ In this talk, we’ll show how to go beyond autocomplete, agent-mode, and levera
 
 In this session, our goal is to offer a practical, actionable approach on how to use the latest tools and capabilities of Copilot for security purposes.
 
-# Demo-plan and topics
-
-## Ordered demo
-
 
 # References
 1. Worktrees, working with isolated changes and background agents
@@ -37,6 +33,7 @@ In this session, our goal is to offer a practical, actionable approach on how to
 	1. https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context
 1. Skills
 	1. https://skills.sh
+	1. https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md
 1. Awesome Copilot
 	1. https://github.com/github/awesome-copilot
 1. GitHub Agentic Workflows
