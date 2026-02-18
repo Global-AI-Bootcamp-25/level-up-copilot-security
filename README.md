@@ -26,8 +26,9 @@ In this session, our goal is to offer a practical, actionable approach on how to
 	1. https://code.visualstudio.com/docs/copilot/customization/agent-skills#_agent-skills-vs-custom-instructions
 1. Claude preview
 	1. https://code.visualstudio.com/updates/v1_109#_claude-agent-preview
-1. Agent orchestation
+1. Agent orchestation (conductor + planning + implementation + code review)
 	1. https://code.visualstudio.com/updates/v1_109#_agent-orchestration
+	1. https://github.com/ShepAlderson/copilot-orchestra
 1. Manage context window
 	1. +Compact
 	1. https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context
