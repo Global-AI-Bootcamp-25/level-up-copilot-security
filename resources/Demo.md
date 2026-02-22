@@ -1,32 +1,38 @@
 # Demo
 This is the demo proposal for the talk "Level Up with GitHub Copilot"
 
-## Warming up with background/cloud/sub agents
 1. Assess the audience level and explain the basics if necessary before going further
+- Usas la IA para desarrollo en tu día a día
+- Cuántos usáis GH Copilot
+- Usáis algún tipo de personalización? (Custom agents, skills, instructions, prompts...)
+- Slide de ref (añadir SKILLS)
 
-1. Worktree and/or background agent to fix a more complex scenario, with a prepared and fine-tuned prompt.
-    1. Create a Mermaid-like diagram of the architecture for later use. (+MCP Drawio)
-    2. We can also launch something at the same time in GitHub.com. Update a library, or fix the JWT authentication. Launch it and show the results at the end of the talk (have something pre-cooked as well in case something fails)
+1.  Start up
+- Generar y enseñar al vuelo las .copilot-instructions
 
-## Security
+1. SKILLs
+-  STRIDE skill evaluate the image
 
-Threat modelling and custom agent or skill to evaluate an image, and do the same with Mermaid diagram (created previously)
+1. Custom agents
+- Enseñar el contenido del custom agent PLAN
+- Awesome Copilot (copiar uno y explicar el objetivo)
+- Enseñamos los custom agents que tenemos en el repo
+- Delegar una tarea de security a nuestro agente "security reviewer" y perdile una tarea (local)
+- Enseñar los agentes a nivel de organización (.github-private/agents)
 
-- Evaluate an existant project looking for vulnerabilities (custom-agent)
-    - Security-reviewer agent
-    - STRIDE skill
-- Automatic fix with several conversations at the same time
+1. Background agents
+- Worktree and/or background agent to fix one of the issues that the "security reviewer" has found  
+- Lanzar prompt en local & cloud para generar documentación de proyecto
 
-## Internal compliance
+1. Internal compliance
+- Comply with internal documentation (copilot-instructions) a nivel de GitHub
 
-- Organization-wide instructions showcasing (GitHub.com)
-- Comply with internal documentation
-    - Show how to create a new SKILL live with the key-files but focusing on SKILL.md
-    - Use the company-guides skill
-- PR review
+1. Subagents
+- Escenario minimalista para enseñar subagents funcionando (Diego will test it)
 
-## Agent orchestration
-- Automatically triage issues
-- Continuous documentation
-- Weekly repo status with critical vulnerabilities (like dependabot)
+1. Agentic workflows (experimental)
+- Enseñar workflow de actualización automática de la documentación precocinado en GitHub
+
+1. Conclusiones
+- Velocidad de cambio trepidante
 

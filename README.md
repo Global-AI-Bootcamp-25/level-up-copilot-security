@@ -41,4 +41,5 @@ In this session, our goal is to offer a practical, actionable approach on how to
 	1. https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/
 	1. https://github.github.com/gh-aw/
 	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-security-compliance/
+	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-documentation/
 
