@@ -1,4 +1,4 @@
-# Demo
+# Demo y prompts
 This is the demo proposal for the talk "Level Up with GitHub Copilot"
 
 1. Assess the audience level and explain the basics if necessary before going further
