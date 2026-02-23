@@ -27,8 +27,8 @@ namespace MyApp.API.Controllers
             return new string[] {
                 "1234Qwert%",
                 "non-pi information",
-                "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lKdGVVRlFTU0lzSW5CaGMzTjNiM0prSWpvaVpHOTBibVYwTWpBeU5TVXVJaXdpYm1GdFpTSTZJa1J2ZEc1bGRDQXlNREkxSWl3aWFXRjBJam94TlRFMk1qTTVNREl5ZlEuR0c1bmhkVVZuOUNsU0ZGYWd0MHRQb2RKdy12TGpCSzJQSHhtSWgwOTFUOA==",
-                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJteUFQSSIsInBhc3N3b3JkIjoiZG90bmV0MjAyNSUuIiwibmFtZSI6IkRvdG5ldCAyMDI1IiwiaWF0IjoxNTE2MjM5MDIyfQ.GG5nhdUVn9ClSFFagt0tPodJw-vLjBK2PHxmIh091T8"
+                "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lJeE1qTTBOVFkzT0Rrd0lpd2libUZ0WlNJNklreGxkbVZzVlhCSGFYUklkV0pEYjNCcGJHOTBJaXdpY0dGemMzZHZjbVFpT2lKc1pYWmxiRlZ3TWpZaUxDSnBZWFFpT2pFMU1UWXlNemt3TWpKOS5rbjAwUHVVWkJiY0FmY3NMYWxFSmZydkR2MTNWOExBMC1YSEJ4NURHTkQ0",
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkxldmVsVXBHaXRIdWJDb3BpbG90IiwicGFzc3dvcmQiOiJsZXZlbFVwMjYiLCJpYXQiOjE1MTYyMzkwMjJ9.kn00PuUZBbcAfcsLalEJfrvDv13V8LA0-XHBx5DGND4"
             };
         }
 
