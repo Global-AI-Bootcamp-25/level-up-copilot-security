@@ -1,38 +1,47 @@
-# Demo y prompts
+# Demo and prompts
 This is the demo proposal for the talk "Level Up with GitHub Copilot"
 
 1. Assess the audience level and explain the basics if necessary before going further
-- Usas la IA para desarrollo en tu día a día
-- Cuántos usáis GH Copilot
-- Usáis algún tipo de personalización? (Custom agents, skills, instructions, prompts...)
-- Slide de ref (añadir SKILLS)
+- Do you use AI for development in your daily work?
+- How many of you use GH Copilot?
+- Do you use any kind of customization? (Custom agents, skills, instructions, prompts...)
+- Reference slide (add SKILLS)
 
-1.  Start up
-- Generar y enseñar al vuelo las .copilot-instructions
+##  Startup
+- Generate and teach on the fly the .copilot-instructions
+```
+Chat settings icon -> Instructions & Rules -> Generate workspace instructions with agent
+```
 
-1. SKILLs
--  STRIDE skill evaluate the image
+## SKILLs
+-  STRIDE skill evaluate the codebase
+``` text 
+Could you please evaluate the #codebase from an STRIDE perspective?
+```
 
-1. Custom agents
-- Enseñar el contenido del custom agent PLAN
-- Awesome Copilot (copiar uno y explicar el objetivo)
-- Enseñamos los custom agents que tenemos en el repo
-- Delegar una tarea de security a nuestro agente "security reviewer" y perdile una tarea (local)
-- Enseñar los agentes a nivel de organización (.github-private/agents)
+## Custom agents
+- Show the custom agent Plan
+- [Awesome Copilot](https://github.com/github/awesome-copilot) (choose for example adr-generator and load it in the repo)
+- Show the custom agents we already had in the repo
+- Delegate a task to our agent "Security Reviewer" (local)
+```
+I would like to analyze the security posture of my project #codebase
+```
+- Show agents at organization level (.github-private/agents)
 
-1. Background agents
+## Background agents
 - Worktree and/or background agent to fix one of the issues that the "security reviewer" has found  
-- Lanzar prompt en local & cloud para generar documentación de proyecto
+- Run prompts locally & cloud to generate project documentation
 
-1. Internal compliance
-- Comply with internal documentation (copilot-instructions) a nivel de GitHub
+## Internal compliance
+- Comply with internal documentation (copilot-instructions) at GitHub level
 
-1. Subagents
-- Escenario minimalista para enseñar subagents funcionando (Diego will test it)
+## Subagents
+- Minimal scenario to teach subagents working (Diego will test it)
 
-1. Agentic workflows (experimental)
-- Enseñar workflow de actualización automática de la documentación precocinado en GitHub
+## Agentic workflows (experimental)
+- Teach automatic documentation update workflow prepared in GitHub
 
-1. Conclusiones
-- Velocidad de cambio trepidante
+## Conclusions
+- Rapid pace of change
 
