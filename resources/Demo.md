@@ -29,7 +29,7 @@ I would like to analyze the security posture of my project #codebase
 ```
 - Show agents at organization level (.github-private/agents)
 
-## Background agents
+## Background agents 
 - Worktree and/or background agent to fix one of the issues that the "security reviewer" has found
 ```
 I want you to fix the XSS I have in #file:XssView.vue 
@@ -37,12 +37,12 @@ I want you to fix the XSS I have in #file:XssView.vue
 Once you finished review from a security perspective that the vulnerability is mitigated. Do not modify any other file rather than the one I have referenced.
 ```
 
-- Run prompts locally & cloud to generate project documentation
+- Run prompts locally & cloud to generate project documentation (⚠️pending)
 ```
 
 ```
 
-## Internal compliance
+## Internal compliance (⚠️pending)
 - Comply with internal documentation (copilot-instructions) at GitHub level
 
 ## Subagents
@@ -61,6 +61,11 @@ I want you to review my project and suggest an improvement plan. You need to ana
 - Security
 
 For each of these two, propose 1 key change, and present it to me in a categorized plan, one section each including: why this is the most relevant, and what we will accomplish with the suggested proposal.
+```
+
+- Subagent orchestrator instruction
+```
+#file:subagents.instruction.md I want to improve the overall security of my project, and at the same time improve the arquitecture approach. Tell me a list of 5 elements I should commit to now. Prioritize them from a criticallity point of view.
 ```
 
 ## Agentic workflows (experimental)
