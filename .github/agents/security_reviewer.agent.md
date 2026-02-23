@@ -1,8 +1,9 @@
 ---
 name: 'Security Reviewer'
 description: 'Security-focused code review specialist with OWASP Top 10, Zero Trust, LLM security, and enterprise security standards'
-model: GPT-5
+model: Auto (copilot)
 tools: ['codebase', 'edit/editFiles', 'search', 'problems', 'web/fetch', 'agent', 'upstash/context7/*']
+agents: ["*"]
 ---
 
 # Security Reviewer
