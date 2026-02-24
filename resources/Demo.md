@@ -43,8 +43,11 @@ Once you finished review from a security perspective that the vulnerability is m
 # Ran again the previous prompt. Check the conversation in GitHub.com
 ```
 
-## Internal compliance (⚠️pending) - L
+## Internal compliance - L
 - Comply with internal documentation (copilot-instructions) at GitHub level
+```
+Uploaded at organization level the custom instructions with general guidelines
+```
 
 ## Subagents - D
 - Minimal scenario to teach subagents working
