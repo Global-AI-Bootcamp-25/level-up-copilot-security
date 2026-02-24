@@ -38,9 +38,9 @@ I want you to fix the XSS I have in #file:XssView.vue
 Once you finished review from a security perspective that the vulnerability is mitigated. Do not modify any other file rather than the one I have referenced.
 ```
 
-- Run prompts locally & cloud to generate project documentation (⚠️pending)
+- Run prompts locally & cloud to generate project documentation
 ```
-# Show cloud conversation fixed
+# Ran again the previous prompt. Check the conversation in GitHub.com
 ```
 
 ## Internal compliance (⚠️pending) - L
