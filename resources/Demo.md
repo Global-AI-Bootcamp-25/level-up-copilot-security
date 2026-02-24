@@ -1,4 +1,4 @@
-# Demo and prompts
+# Demo and prompts - L (+intro ppt)
 This is the demo proposal for the talk "Level Up with GitHub Copilot"
 
 1. Assess the audience level and explain the basics if necessary before going further
@@ -7,19 +7,19 @@ This is the demo proposal for the talk "Level Up with GitHub Copilot"
 - Do you use any kind of customization? (Custom agents, skills, instructions, prompts...)
 - Reference slide (add SKILLS)
 
-##  Startup
+##  Startup - D
 - Generate and teach on the fly the .copilot-instructions
 ```
 Chat settings icon -> Instructions & Rules -> Generate workspace instructions with agent
 ```
 
-## SKILLs
+## SKILLs - D
 -  STRIDE skill evaluate the codebase
 ``` text 
 Could you please evaluate the #codebase from an STRIDE perspective?
 ```
 
-## Custom agents
+## Custom agents - L
 - Show the custom agent Plan
 - [Awesome Copilot](https://github.com/github/awesome-copilot) (choose for example adr-generator and load it in the repo)
 - Show the custom agents we already had in the repo
@@ -27,9 +27,10 @@ Could you please evaluate the #codebase from an STRIDE perspective?
 ```
 I would like to analyze the security posture of my project #codebase
 ```
+
 - Show agents at organization level (.github-private/agents)
 
-## Background agents 
+## Background agents - D
 - Worktree and/or background agent to fix one of the issues that the "security reviewer" has found
 ```
 I want you to fix the XSS I have in #file:XssView.vue 
@@ -39,13 +40,13 @@ Once you finished review from a security perspective that the vulnerability is m
 
 - Run prompts locally & cloud to generate project documentation (⚠️pending)
 ```
-
+# Show cloud conversation fixed
 ```
 
-## Internal compliance (⚠️pending)
+## Internal compliance (⚠️pending) - L
 - Comply with internal documentation (copilot-instructions) at GitHub level
 
-## Subagents
+## Subagents - D
 - Minimal scenario to teach subagents working
 ```
 # Selecting no file nor custom agent
@@ -68,7 +69,7 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 #file:subagents.instruction.md I want to improve the overall security of my project, and at the same time improve the arquitecture approach. Tell me a list of 5 elements I should commit to now. Prioritize them from a criticallity point of view.
 ```
 
-## Agentic workflows (experimental)
+## Agentic workflows (experimental) - L
 - Teach automatic documentation update workflow prepared in GitHub
 
 ## Conclusions
