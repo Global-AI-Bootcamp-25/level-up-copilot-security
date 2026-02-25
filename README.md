@@ -1,4 +1,27 @@
 
+## Agentic Workflows
+
+This repository includes GitHub Agentic Workflows that automate recurring tasks. These workflows run on a schedule and use AI agents to complete their tasks autonomously.
+
+### Daily Activity Report
+
+Generates a daily summary of repository activity (commits, PRs, issues, releases) and posts it as a GitHub issue.
+
+- **Schedule**: Every weekday
+- **Source**: `.github/workflows/daily-activity-report.md`
+
+### Daily Documentation Updater
+
+Scans for merged pull requests and code changes from the last 24 hours, identifies new features or changes that should be documented, and updates the documentation accordingly by creating a pull request.
+
+- **Schedule**: Daily
+- **Source**: `.github/workflows/daily-doc-updater.md`
+- **Output**: Creates a pull request with documentation updates
+
+For more information about GitHub Agentic Workflows, see the [gh-aw documentation](https://github.github.com/gh-aw/).
+
+---
+
 ## Objective
 
 > Showcase what we can accomplish in security using all the latest features of GitHub Copilot.
