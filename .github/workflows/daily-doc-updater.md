@@ -40,6 +40,8 @@ tools:
     - "find docs -maxdepth 1 -ls"
     - "find docs -name '*.md' -exec cat {} +"
     - "grep -r '*' docs"
+    - "git config:*"
+    - "python3:*"
 
 timeout-minutes: 45
 
