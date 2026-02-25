@@ -15,9 +15,9 @@ imports:
 - github/gh-aw/.github/workflows/shared/mood.md@852cb06ad52958b402ed982b69957ffc57ca0619
 safe-outputs:
   create-pull-request:
-    auto-merge: true
-    draft: false
-    expires: 1d
+    auto-merge: false
+    draft: true
+    expires: 7d
     labels:
     - documentation
     - automation
