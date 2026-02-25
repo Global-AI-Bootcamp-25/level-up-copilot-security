@@ -13,6 +13,36 @@ In this talk, we’ll show how to go beyond autocomplete, agent-mode, and levera
 In this session, our goal is to offer a practical, actionable approach on how to use the latest tools and capabilities of Copilot for security purposes.
 
 
+# GitHub Agentic Workflows
+
+This repository includes GitHub Agentic Workflows that automate common repository maintenance tasks using AI.
+
+## Daily Documentation Updater
+
+**Workflow file**: `.github/workflows/daily-doc-updater.md`
+
+Runs daily at 6am UTC (and on demand). Scans merged pull requests and commits from the last 24 hours, identifies new features or changes that need documentation, and opens a draft pull request with the updated documentation.
+
+The workflow:
+- Searches for pull requests merged in the last 24 hours
+- Analyzes added, removed, and modified features
+- Updates documentation files to reflect the changes
+- Creates a pull request with a summary of what was documented
+
+## Daily Activity Report
+
+**Workflow file**: `.github/workflows/daily-activity-report.md`
+
+Runs daily on weekdays. Generates a summary of repository activity (commits, pull requests, issues, releases) and posts it as a GitHub issue.
+
+The report includes:
+- Recent commits with authors and messages
+- Merged, open, and updated pull requests
+- Opened and closed issues
+- New releases
+
+Both workflows use the [GitHub Agentic Workflows](https://github.github.com/gh-aw/) platform (`engine: copilot`).
+
 # References
 1. Worktrees, working with isolated changes and background agents
 	1. https://code.visualstudio.com/updates/v1_107#_continue-tasks-in-background-or-cloud-agents
