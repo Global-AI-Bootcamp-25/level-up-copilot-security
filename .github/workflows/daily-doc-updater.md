@@ -1,51 +1,49 @@
 ---
-name: Daily Documentation Updater
-description: Automatically reviews and updates documentation to ensure accuracy and completeness
 on:
   schedule:
-    # Every day at 6am UTC
-    - cron: daily
-  workflow_dispatch:
-
+  - cron: daily
+  workflow_dispatch: null
 permissions:
   contents: read
   issues: read
   pull-requests: read
-
-tracker-id: daily-doc-updater
-engine: copilot
-strict: true
-
 network:
   allowed:
-    - defaults
-    - github
-
+  - defaults
+  - github
+imports:
+- github/gh-aw/.github/workflows/shared/mood.md@852cb06ad52958b402ed982b69957ffc57ca0619
 safe-outputs:
   create-pull-request:
+    auto-merge: false
+    draft: true
     expires: 1d
+    labels:
+    - documentation
+    - automation
+    reviewers:
+    - copilot
     title-prefix: "[docs] "
-    labels: [documentation, automation]
-    reviewers: [copilot]
-    draft: false
-    auto-merge: true
-
-tools:
-  cache-memory: true
-  github:
-    toolsets: [default]
-  edit:
-  bash:
-    - "find docs -name '*.md' -o -name '*.mdx'"
-    - "find docs -maxdepth 1 -ls"
-    - "find docs -name '*.md' -exec cat {} +"
-    - "grep -r '*' docs"
-
+description: Automatically reviews and updates documentation to ensure accuracy and completeness
+engine: copilot
+name: Daily Documentation Updater
+source: github/gh-aw/.github/workflows/daily-doc-updater.md@852cb06ad52958b402ed982b69957ffc57ca0619
+strict: true
 timeout-minutes: 45
-
-source: github/gh-aw/.github/workflows/daily-doc-updater.md@94662b1dee8ce96c876ba9f33b3ab8be32de82a4
+tools:
+  bash:
+  - find docs -name '*.md' -o -name '*.mdx'
+  - find docs -maxdepth 1 -ls
+  - find docs -name '*.md' -exec cat {} +
+  - grep -r '*' docs
+  - git
+  cache-memory: true
+  edit: null
+  github:
+    toolsets:
+    - default
+tracker-id: daily-doc-updater
 ---
-
 {{#runtime-import? .github/shared-instructions.md}}
 
 # Daily Documentation Updater
