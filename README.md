@@ -14,6 +14,18 @@ In this session, our goal is to offer a practical, actionable approach on how to
 
 
 # References
+## Agentic Workflows
+
+This repository uses [GitHub Agentic Workflows](https://github.github.com/gh-aw/) for automation:
+
+| Workflow | File | Description |
+|----------|------|-------------|
+| Daily Documentation Updater | `.github/workflows/daily-doc-updater.md` | Runs daily at 6am UTC. Scans merged PRs from the last 24 hours and automatically updates documentation for new features and changes. Creates a draft PR with any documentation updates for review. |
+| Agentic Maintenance | `.github/workflows/agentics-maintenance.yml` | Runs every 2 hours. Closes expired issues, discussions, and pull requests created by agentic workflows. |
+
+The agentic workflow source files (`.md`) are compiled into lock files (`.lock.yml`) using the `gh aw compile` command.
+
+# References
 1. Worktrees, working with isolated changes and background agents
 	1. https://code.visualstudio.com/updates/v1_107#_continue-tasks-in-background-or-cloud-agents
 	1. https://code.visualstudio.com/docs/sourcecontrol/branches-worktrees#_working-with-git-worktrees
