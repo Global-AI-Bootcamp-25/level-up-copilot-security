@@ -25,7 +25,7 @@ safe-outputs:
     - copilot
     title-prefix: "[docs] "
 description: Automatically reviews and updates documentation to ensure accuracy and completeness
-engine: claude
+engine: copilot
 name: Daily Documentation Updater
 source: github/gh-aw/.github/workflows/daily-doc-updater.md@852cb06ad52958b402ed982b69957ffc57ca0619
 strict: true
