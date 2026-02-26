@@ -75,6 +75,9 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 ## Agentic workflows (experimental) - L
 - Teach automatic documentation update workflow prepared in GitHub
 
+## MCPs 
+
+- Diagram.io with diagram in readme
+
 ## Conclusions
 - Rapid pace of change
-
