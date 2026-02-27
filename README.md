@@ -47,7 +47,7 @@ In this session, our goal is to offer a practical, actionable approach on how to
 
 ## Threat Model - Azure Architecture
 
-### Diagrama STRIDE
+### Diagram STRIDE
 
 ```mermaid
 flowchart LR
