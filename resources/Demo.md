@@ -75,6 +75,9 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 ## Agentic workflows (experimental) - L
 - Teach automatic documentation update workflow prepared in GitHub
 
+## Model Context Protocols (MCPs)
+
+- Demonstrate the diagrams.net (formerly draw.io) MCP integration by creating an architecture diagram and embedding it in the README
+
 ## Conclusions
 - Rapid pace of change
-

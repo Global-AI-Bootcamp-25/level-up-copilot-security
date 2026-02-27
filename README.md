@@ -1,10 +1,11 @@
+# Level up with GitHub Copilot for Security Compliance and Best Practices
 
 ## Objective
 
 > Showcase what we can accomplish in security using all the latest features of GitHub Copilot.
 
 
-# Official talk text
+## Official talk text
 
 You already use GitHub Copilot to speed up development—but what if you could also write code according to your internal or industry security standards?
 
@@ -13,7 +14,7 @@ In this talk, we’ll show how to go beyond autocomplete, agent-mode, and levera
 In this session, our goal is to offer a practical, actionable approach on how to use the latest tools and capabilities of Copilot for security purposes.
 
 
-# References
+## References
 1. Worktrees, working with isolated changes and background agents
 	1. https://code.visualstudio.com/updates/v1_107#_continue-tasks-in-background-or-cloud-agents
 	1. https://code.visualstudio.com/docs/sourcecontrol/branches-worktrees#_working-with-git-worktrees
@@ -43,3 +44,45 @@ In this session, our goal is to offer a practical, actionable approach on how to
 	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-security-compliance/
 	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-documentation/
 
+
+## Threat Model - Azure Architecture
+
+### Diagram STRIDE
+
+```mermaid
+flowchart LR
+
+U[/"External Entity:\nApplication Users"/]
+D[/"External Entity:\nDevelopers"/]
+
+subgraph TB1["Trust Boundary: Internet (Untrusted)"]
+  U
+  D
+end
+
+subgraph TB2["Trust Boundary: Azure Tenant / Subscription (Trusted)"]
+  subgraph TB3["Trust Boundary: Web Edge (Public-facing)"]
+    SWA["Process:\nAzure Static Web App\n(Public endpoint)"]
+  end
+
+  subgraph TB4["Trust Boundary: App Tier (Internal)"]
+    APP["Process:\nApp Service\n(Backend API)"]
+  end
+
+  subgraph TB5["Trust Boundary: Data Stores (Confidential)"]
+    SQL[("Data Store:\nAzure SQL Database")]
+    STG[("Data Store:\nCloud Storage")]
+  end
+
+  subgraph TB6["Trust Boundary: DevOps / Supply Chain"]
+    ADO["Process:\nAzure DevOps\n(CI/CD)"]
+  end
+end
+
+U -- "HTTPS\n(AuthN/AuthZ, Input Data)" --> SWA
+D -- "HTTPS\n(Creds/Token)" --> ADO
+SWA -- "HTTPS / API Calls" --> APP
+APP --> SQL
+APP --> STG
+ADO --> APP
+```
