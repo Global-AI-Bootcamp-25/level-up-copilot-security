@@ -45,7 +45,7 @@ In this session, our goal is to offer a practical, actionable approach on how to
 	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-documentation/
 
 
-## Threat Model - Arquitectura Azure
+## Threat Model - Azure Architecture
 
 ### Diagrama STRIDE
 
