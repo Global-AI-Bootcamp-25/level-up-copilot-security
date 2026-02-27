@@ -77,7 +77,7 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 
 ## Model Context Protocols (MCPs)
 
-- Diagram.io with diagram in readme
+- Demonstrate the diagrams.net (formerly draw.io) MCP integration by creating an architecture diagram and embedding it in the README
 
 ## Conclusions
 - Rapid pace of change
