@@ -43,6 +43,10 @@ In this session, our goal is to offer a practical, actionable approach on how to
 	1. https://github.github.com/gh-aw/
 	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-security-compliance/
 	1. https://github.github.com/gh-aw/blog/2026-01-13-meet-the-workflows-documentation/
+1. Model Context Protocols (MCPs)
+	1. https://modelcontextprotocol.io/introduction
+	1. https://github.com/github/github-mcp-server
+	1. https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
 
 ## Threat Model - Azure Architecture
