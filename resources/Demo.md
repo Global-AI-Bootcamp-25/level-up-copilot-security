@@ -46,7 +46,13 @@ Once you finished review from a security perspective that the vulnerability is m
 ## Internal compliance - L
 - Comply with internal documentation (copilot-instructions) at GitHub level
 ```
-Uploaded at organization level the custom instructions with general guidelines
+# Uploaded at repo's organization level the custom instructions with general guidelines
+
+# Ask copilot
+What does my organization recommend as general guidelines?
+
+# Another example
+I want to commit a new file, what do you suggest me?
 ```
 
 ## Subagents - D
