@@ -86,3 +86,35 @@ APP --> SQL
 APP --> STG
 ADO --> APP
 ```
+
+## GitHub Copilot Customizations
+
+This repository includes a set of GitHub Copilot customizations to support security-focused development workflows.
+
+### Custom Agents
+
+| Agent | Description |
+|-------|-------------|
+| **Security Reviewer** | Security-focused code review specialist applying OWASP Top 10, Zero Trust, LLM security, and enterprise security standards |
+| **Cloud Architect** | Expert in modern architecture design patterns, NFR requirements, and creating comprehensive architectural diagrams |
+| **UI Testing** | Specialized agent for UI testing workflows using Playwright |
+| **Agentic Workflows** | Expert in GitHub Agentic Workflows (gh-aw) — creates, debugs, and upgrades AI-powered workflows |
+
+### Skills
+
+| Skill | Description |
+|-------|-------------|
+| **STRIDE** | Apply STRIDE methodology to systematically identify and document threats |
+| **Mermaid Diagrams** | Create software diagrams (class, sequence, flowchart, C4, ERD) using Mermaid syntax |
+| **Web Best Practices** | Apply modern web development best practices for security, compatibility, and code quality |
+| **Accessibility** | Audit and improve web accessibility following WCAG 2.1 guidelines |
+| **Company Guides** | Apply company-wide engineering best practices for code style, linting, security, and privacy |
+| **Library Documentation** | Retrieve library and framework documentation and API references |
+| **Skill Creator** | Guide for creating new skills that extend Copilot's capabilities |
+
+### Agentic Workflows
+
+| Workflow | Trigger | Description |
+|----------|---------|-------------|
+| **Daily Documentation Updater** | Daily (6 AM UTC) / Manual | Reviews merged PRs and commits to update documentation automatically |
+| **Daily Activity Report** | Daily / Manual | Generates a daily summary of repository activity (commits, PRs, issues) as a GitHub issue |
