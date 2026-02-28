@@ -1,51 +1,64 @@
 # Demo and prompts - L (+intro ppt)
+
 This is the demo proposal for the talk "Level Up with GitHub Copilot"
 
 1. Assess the audience level and explain the basics if necessary before going further
+
 - Do you use AI for development in your daily work?
 - How many of you use GH Copilot?
 - Do you use any kind of customization? (Custom agents, skills, instructions, prompts...)
 - Reference slide (add SKILLS)
 
-##  Startup - D
+## Startup - D
+
 - Generate and teach on the fly the .copilot-instructions
-```
+
+``` text
 Chat settings icon -> Instructions & Rules -> Generate workspace instructions with agent
 ```
 
 ## SKILLs - D
--  STRIDE skill evaluate the codebase
-``` text 
+
+- STRIDE skill evaluate the codebase
+
+``` text
 Could you please evaluate the #codebase from an STRIDE perspective?
 ```
 
 ## Custom agents - L
+
 - Show the custom agent Plan
 - [Awesome Copilot](https://github.com/github/awesome-copilot) (choose for example adr-generator and load it in the repo)
 - Show the custom agents we already had in the repo
 - Delegate a task to our agent "Security Reviewer" (local)
-```
+
+``` text
 I would like to analyze the security posture of my project #codebase
 ```
 
 - Show agents at organization level (.github-private/agents)
 
 ## Background agents - D
+
 - Worktree and/or background agent to fix one of the issues that the "security reviewer" has found
-```
+
+``` text
 I want you to fix the XSS I have in #file:XssView.vue 
 
 Once you finished review from a security perspective that the vulnerability is mitigated. Do not modify any other file rather than the one I have referenced.
 ```
 
 - Run prompts locally & cloud to generate project documentation
-```
+
+``` text
 # Ran again the previous prompt. Check the conversation in GitHub.com
 ```
 
 ## Internal compliance - L
+
 - Comply with internal documentation (copilot-instructions) at GitHub level
-```
+
+``` text
 # Uploaded at repo's organization level the custom instructions with general guidelines
 
 # Ask copilot
@@ -56,14 +69,17 @@ I want to commit a new file, what do you suggest me?
 ```
 
 ## Subagents - D
+
 - Minimal scenario to teach subagents working
-```
+
+``` text
 # Selecting no file nor custom agent
 I want you to run an STRIDE analysis of the project, and once you have done that, gather only the critical issues, and in a subagent, analyze them with a fix proposal for each one of them. Try to be educational to understand the security issue.
 ```
 
 - Advanced scenario
-```
+
+``` text
 # Selecting no file nor custom agent
 I want you to review my project and suggest an improvement plan. You need to analyze it from two different perspectives using subagents:
 
@@ -74,11 +90,13 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 ```
 
 - Subagent orchestrator instruction
-```
+
+``` text
 #file:subagents.instruction.md I want to improve the overall security of my project, and at the same time improve the arquitecture approach. Tell me a list of 5 elements I should commit to now. Prioritize them from a criticallity point of view.
 ```
 
 ## Agentic workflows (experimental) - L
+
 - Teach automatic documentation update workflow prepared in GitHub
 
 ## Model Context Protocols (MCPs)
@@ -86,4 +104,5 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 - Demonstrate the diagrams.net (formerly draw.io) MCP integration by creating an architecture diagram and embedding it in the README
 
 ## Conclusions
+
 - Rapid pace of change
