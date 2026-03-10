@@ -17,6 +17,14 @@ This is the demo proposal for the talk "Level Up with GitHub Copilot"
 Chat settings icon -> Instructions & Rules -> Generate workspace instructions with agent
 ```
 
+## 🆕 Populate repo with custom agents, skills, prompts (Agent Plugins)
+```text
+1. chat.plugins.marketplaces
+2. Extensions -> Agents Plugins + @agentPlugins
+3. Activate "software-engineering-team" -> Agents installed and ready to be used in the repo
+
+```
+
 ## SKILLs - D
 
 - STRIDE skill evaluate the codebase
