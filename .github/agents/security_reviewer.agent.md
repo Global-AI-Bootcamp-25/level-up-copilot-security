@@ -4,6 +4,12 @@ description: 'Security-focused code review specialist with OWASP Top 10, Zero Tr
 model: Auto (copilot)
 tools: ['codebase', 'edit/editFiles', 'search', 'problems', 'web/fetch', 'agent', 'upstash/context7/*']
 agents: ["*"]
+hooks:
+  UserPromptSubmit:
+    - type: "command"
+      command: "powershell.exe -ExecutionPolicy Bypass -File .\scripts\security-check.ps1"
+      cwd: "."
+      timeout: 300
 ---
 
 # Security Reviewer
@@ -160,3 +166,9 @@ for attempt in range(3):
 ```
 
 Remember: Goal is enterprise-grade code that is secure, maintainable, and compliant.
+
+Before starting any frontend or dependency security review, first check:
+- docs/code-review/latest-clientapp-npm-audit.md
+- docs/code-review/latest-clientapp-npm-audit.json
+
+Use them as supplemental evidence, then verify findings against the codebase.

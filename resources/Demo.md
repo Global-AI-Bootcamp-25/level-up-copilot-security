@@ -33,7 +33,7 @@ Chat settings icon -> Instructions & Rules -> Generate workspace instructions wi
 Could you please evaluate the #codebase from an STRIDE perspective?
 ```
 
-## Custom agents - L
+## Custom agents (+hooks) - L
 
 - Show the custom agent Plan
 - [Awesome Copilot](https://github.com/github/awesome-copilot) (choose for example adr-generator and load it in the repo)
