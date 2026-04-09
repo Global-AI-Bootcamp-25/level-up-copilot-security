@@ -13,7 +13,6 @@ network:
   - github
 imports:
 - github/gh-aw/.github/workflows/shared/github-guard-policy.md@efde1b5dd2c7c9a7767fa88e334c4cec2d14c337
-- github/gh-aw/.github/workflows/shared/observability-otlp.md@efde1b5dd2c7c9a7767fa88e334c4cec2d14c337
 safe-outputs:
   create-pull-request:
     auto-merge: true
