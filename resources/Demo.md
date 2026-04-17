@@ -111,6 +111,12 @@ For each of these two, propose 1 key change, and present it to me in a categoriz
 
 - Demonstrate the diagrams.net (formerly draw.io) MCP integration by creating an architecture diagram and embedding it in the README
 
+``` text
+1. List all the subscription I have access to.
+2. Access the subscription SUBSCRIPTION_ID, query all resource groups and list me all resources I have in them
+
+```
+
 ## Conclusions
 
 - Rapid pace of change
