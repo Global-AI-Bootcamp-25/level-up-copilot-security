@@ -40,15 +40,12 @@ const inputString = ref<string>('');
 const submittedInputs = ref<string[]>(["Initial input"]);
 
 const handleSubmit = () => {
-    if (!inputString.value) { return; }
+    const submittedInput = inputString.value.trim();
+    if (!submittedInput) { return; }
 
-    if (inputString.value.trim()) {
-        const xssString = `alert(\`Inserted ${inputString.value}\`)`;
-        submittedInputs.value.push(xssString);
-        
-        eval(xssString);
-        inputString.value = '';
-    }
+    submittedInputs.value.push(submittedInput);
+    alert(`Inserted ${submittedInput}`);
+    inputString.value = '';
 }
 </script>
 
