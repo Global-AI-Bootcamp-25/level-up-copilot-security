@@ -43,10 +43,7 @@ const handleSubmit = () => {
     if (!inputString.value) { return; }
 
     if (inputString.value.trim()) {
-        const xssString = `alert(\`Inserted ${inputString.value}\`)`;
-        submittedInputs.value.push(xssString);
-        
-        eval(xssString);
+        submittedInputs.value.push(inputString.value);
         inputString.value = '';
     }
 }
